@@ -1,0 +1,220 @@
+/* html */
+html {font-size: 100%;}
+/* Body */
+body {background-color: white;}
+body {font-family:Arial, Helvetica, sans-serif;}
+/* Header */
+.header {
+    background-image: url( /img/fondo-blanco.png);
+    flex-flow: row;
+    flex-wrap: wrap;  
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+.menu {display: flex;
+    align-content: center;
+    align-items: center;
+    
+}
+header div h5 {padding: 5px;}
+.contactanos {
+    height: 35px;
+    border: solid 1px grey;
+    background:red;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transform: translate(500px,0px);}
+    .info {
+        height: 35px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        color: grey;
+        text-decoration: none;
+        transform: translate(500px,0px);}
+
+    
+
+.headerLogoImg {
+    width: 76px;
+    height: 50px;
+    color: black;
+margin:20px;
+}
+/* barra de navegacion */
+.sticky{
+    position: sticky;
+    top: 0;
+}
+nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+   justify-content:start;
+align-items: center;
+align-content: center;
+}
+.nav-enlace {
+    text-decoration: none;
+    color: grey;
+    border: solid 1px gray;
+padding: 10px 60px 10px 60px;}
+
+.nav-vacio {
+    color:white;
+    border: solid 1px gray;
+padding: 10px 141px 10px 130px;}
+.nav-enlace:hover{
+background: rgba(46, 46, 46, 0.192);
+}
+/* termino hader y barra de navegacion  */
+/* imagen de descripcion */
+.contenedor-imagen {
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/biografia.png);
+    text-align: center;
+    display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: end;
+align-content: center;
+
+}
+
+.descripcion-imagen {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 35px;
+    border: solid 1.5px white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 100px 10px;
+}
+.descripcion-imagen:hover {background: red;
+}
+/* Quien Somos */
+.quienSomos{
+    color: blue;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+
+/* biografia */
+
+.biografia {
+    display: flex;
+    justify-content: center;
+    background-image:url( /logo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height:100%;
+width: 50%;
+overflow: auto;
+color: black;
+/* margenes */
+margin: 10px;
+padding: 20px;
+/* bordes */
+border: solid 5px black;
+}
+
+.biografiaDescripcion {
+font-weight:100;
+font-size: 1.25rem;
+text-align: center;
+line-height: 1.5;
+}
+
+/* aside de color */
+
+.asideSpan {
+    margin: 50px;
+display:inline-block; }
+.sticky {position: sticky;}
+
+
+
+
+/* cambiar color por etiqueta */
+h6 {color:red;}
+footer p {color:mediumblue;}
+
+/* Cambiar color por clases */
+.t-color-red {color: red;}
+.colorCeleste {color:skyblue}
+.colorRojo {color:red}
+
+/* Cambiar color de fondos */
+.fondoNegro {background-color: black;}
+.fondogris{background-color: gray;}
+
+
+/* hacer una id unica  */
+#tituloContacto{color: orange;}
+#rojo{color: red;}
+/* tener el color del texto negro aunque se cambie */
+a{color: black;text-decoration: black;}
+
+
+
+
+
+/* pagina proyectos */
+.contenedor-collage {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    color: white;
+    display: grid;
+    /* grid-template-columns: 50% 25% 25%;  se usa con porcentajes*/
+    /*grid-template-columns:2fr 1fr 1fr;  se usa como fraccion) */
+    grid-template-columns: repeat(4,20%); /*se usa como repetidor */
+    grid-template-rows: repeat(4,20%);
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+    "img img-2 img-2 img-7"
+    "img img-3 img-6 img-7"
+    "img img-4 img-6 img-7"
+    "img img-5 img-5 img-7" ;
+    justify-content:center;
+    align-content:center ;
+    }
+    .img-1 {
+        background-image: url(/img/img-1.png);
+    grid-area: img ;}
+.img-2 { 
+    background-image: url(/img/img-2.png);
+grid-area: img-2 ;}
+.img-3 {
+    background-image: url(/img/img-3.png);
+grid-area: img-3 ;}
+.img-4 {
+    background-image:url(/img/img-4.png);
+grid-area: img-4 ;}
+.img-5 {
+    background-image: url(/img/img-5.png);
+grid-area: img-5 ;}
+.img-6 {
+    background-image: url(/img/img-6.png);
+grid-area: img-6 ;}
+.img-7 {
+    background-image: url(/img/img-7.png);
+grid-area: img-7 ;}
+.collage-imagen {
+    background-color: green;}
+
+
